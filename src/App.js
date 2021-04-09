@@ -3,10 +3,10 @@ import NavBar from 'components/NavBar'
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <NavBar/>
       <Router/>
-    </div>
+    </main>
   );
 }
 

@@ -1,9 +1,22 @@
-export const fetchUserPostsSuccess = (usersPosts) => ({
-  type: 'SUCCESS',
-  usersPosts
+export const fetchUsersSuccess = (users) => ({
+  type: 'SUCCESSUSERS',
+  users
 })
 
-export const fetchUserPostsFailure = (error) => ({
-  type: 'FAILURE',
-  error
+export const addUser = (user) => ({
+  type: 'CREATEUSERS',
+  user
+})
+
+export const fetchUsersFailure = () => ({
+  type: 'FAILUREUSERS',
+})
+
+export const fetchPostsSuccess = (posts) => ({
+  type: 'SUCCESSPOSTS',
+  posts
+})
+
+export const fetchPostsFailure = () => ({
+  type: 'FAILUREPOSTS',
 })

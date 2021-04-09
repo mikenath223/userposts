@@ -4,28 +4,23 @@ const initialState = {
   error: false
 };
 
-const usersReducer = (state = initialState, action) => {
+const postsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'SUCCESSUSERS':
+    case 'SUCCESSPOSTS':
       return {
         error: false,
-        items: action.users,
+        items: action.posts,
         loading: false,
       }
-    case 'FAILUREUSERS':
+    case 'FAILUREPOSTS':
       return {
         ...state,
         loading: false,
         error: true
-      }
-    case 'CREATEUSERS':
-      return {
-        ...state,
-        items: [...state.items, action.user]
       }
     default:
       return state;
   }
 }
 
-export default usersReducer;
+export default postsReducer;
